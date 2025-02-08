@@ -33,7 +33,7 @@ Using the REST API, post your command to 'http://localhost:3000/send-command' as
     try {
       const res = await fetch("http://localhost:3000/send-command", {
         method: "POST",
-        headers: {"Content-Type": "application/json",},
+        headers: {"Content-Type": "application/json"},
         body: JSON.stringify({ command: "say testing" }),
       });
     }
